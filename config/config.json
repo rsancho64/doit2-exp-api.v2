@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "root",
+		"password": "bea",
+		"database": "pp_api_dev",
+		"host": "127.0.0.1",
+		"dialect": "mysql"
+  },
+
+  "test": {
+    "database": "pp_api_test",
+    "dialect":  "mysql"
+  },
+
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "mysql",
+    "dialectOptions": {
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
